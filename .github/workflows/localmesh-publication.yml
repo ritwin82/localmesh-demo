@@ -23,7 +23,8 @@ jobs:
           path: localmesh-tool
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
-        with:          node-version: '22'
+        with:
+          node-version: '22'
       - name: Build trusted publisher
         working-directory: localmesh-tool
         shell: pwsh
