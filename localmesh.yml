@@ -1,0 +1,19 @@
+version: 2
+postgres:
+  version: "16"
+  extensions: []
+migrations:
+  directory: db/migrations
+  up_pattern: "*.up.sql"
+  down_pattern: "*.down.sql"
+  adapter: raw-sql
+checks:
+  compare_open_pull_requests: true
+  verify_rollback: true
+  require_data_contracts: false
+  compare_fixture_state: true
+  max_group_size: 2
+  max_group_permutations: 0
+data_state:
+  exclude_columns: []
+  max_differences: 20
